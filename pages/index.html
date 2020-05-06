@@ -11,7 +11,10 @@
     <script src="js/templates/templates.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        Coveo.SearchEndpoint.configureSampleEndpointV2();
+        Coveo.SearchEndpoint.configureCloudV2Endpoint(
+          "mouelletd77f1cb7",
+          "xxc1be3932-bbdf-4393-823e-7b5547f78bed"
+        );
         Coveo.init(document.body);
       })
     </script>
@@ -27,11 +30,10 @@
     </div>
     <div class="coveo-main-section">
       <div class="coveo-facet-column">
-        <div class="CoveoFacet" data-title="Type" data-field="@objecttype" data-tab="All"></div>
-        <div class="CoveoFacet" data-title="FileType" data-field="@filetype" data-tab="All"></div>
-        <div class="CoveoFacet" data-title="Author" data-field="@author" data-tab="All"></div>
-        <div class="CoveoFacet" data-title="Year" data-field="@year" data-tab="All"></div>
-        <div class="CoveoFacet" data-title="Month" data-field="@month" data-tab="All"></div>
+        <div class="CoveoFacet" data-title="Species" data-field="@pokemon_species" data-tab="All"></div>
+        <div class="CoveoFacet" data-title="Growth Rate" data-field="@pokemon_growth" data-tab="All"></div>
+        <div class="CoveoFacet" data-title="Generation" data-field="@pokemon_generation" data-tab="All"></div>
+        <div class="CoveoFacet" data-title="Type" data-field="@pokemon_type" data-tab="All"></div>
       </div>
       <div class="coveo-results-column">
         <div class="CoveoShareQuery"></div>
