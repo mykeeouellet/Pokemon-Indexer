@@ -34,7 +34,7 @@
     "coveo-search-ui": "^2.7968.16",
     "coveo-search-ui-tests": "0.0.7",
     "jasmine": "^3.5.0",
-    "karma": "^4.4.1",
+    "karma": "^6.3.14",
     "karma-chrome-launcher": "^3.1.0",
     "karma-coverage-istanbul-reporter": "^2.1.1",
     "karma-jasmine": "^3.1.1",
